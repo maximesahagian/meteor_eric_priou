@@ -1,0 +1,39 @@
+<template name="mytemplate">
+    <div class="add-eleve">
+        <h3>Ajouter un élève</h3>
+        <input type="text" id="firstname-eleve" placeholder="Prénom de l'élève">
+        <input type="text" id="lastname-eleve" placeholder="Nom de l'élève">
+        <button class="addeleve">Ajouter</button>
+    </div>
+    <div class="add-matiere">
+        <h3>Ajouter une matière</h3>
+        <input type="text" id="name-matiere" placeholder="Nom de la matière">
+        <input type="text" id="coeff-matiere" value="1" placeholder="Coefficient (de base : 1)">
+        <button class="addmatiere">Ajouter</button>
+    </div>
+    <div class="list-eleves">
+        <h3>Liste des élèves</h3>
+        <tr>
+            <td style="width: 100px; text-align: center;"></td>
+            {{#each matieres}}
+                <th style="text-align: center; width: 200px">{{name}}<br> (coeff : {{coefficient}})</th>
+            {{/each}}
+            <th>Moyenne</th>
+        </tr>
+        {{#each eleves}}
+        <tr data-eleve="{{_id}}">
+            <th style="border: 1px solid gray;width: 200px;padding: 10px;">{{firstname}} {{lastname}}</th>
+            {{#each matieres}}
+                <td class="hide" style="border: 1px solid gray; position: relative;">
+                    <div style="height: 100%; position: absolute; width: 100%;" class="to-edit">
+                        {{note_eleve ../_id}}
+                    </div>
+                </td>
+            {{/each}}
+            <td style="border: 1px solid gray; position: relative;">
+                {{moyenne}}
+            </td>
+        </tr>
+        {{/each}}
+    </div>
+</template>
