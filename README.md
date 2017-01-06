@@ -2,7 +2,7 @@ Bonjour,
 
 Voici le résultat du projet de découverte du Framework Meteor.
 
-Vous trouverez dans le dossier ../../ la maquette, nous aurions souhaité avec un peu d'intégration en arriver à ce résultat.
+Vous trouverez dans le dossier maquette la créa, nous aurions souhaité avec un peu d'intégration en arriver à ce résultat.
 
 Le côté fonctionnel pour sa part est bien présent.
 
