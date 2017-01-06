@@ -127,7 +127,7 @@ Template.mytemplate.events({
 
         eleve.update({_id: object.eleve}, JSONobj);
         isEditing = false;
-        $(".actualEdit").closest("td").html('<div style="height: 100%; position: absolute; width: 100%;" class="to-edit">'+note+' </div>');
+        $(".actualEdit").closest("td").html('<div style="height: 100%; position: absolute; width: 100%; text-align: center;" class="to-edit">'+note+' </div>');
       }
     }
   },
@@ -160,7 +160,7 @@ Template.mytemplate.events({
           }
           eleve.update({_id: object.eleve}, JSONobj);
           isEditing = false;
-          $(".actualEdit").closest("td").html('<div style="height: 100%; position: absolute; width: 100%;" class="to-edit">'+note+' </div>');
+          $(".actualEdit").closest("td").html('<div style="height: 100%; position: absolute; width: 100%; text-align: center;" class="to-edit">'+note+' </div>');
         }
         }
     }
